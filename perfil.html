@@ -27,14 +27,14 @@
 			        <li><a href="sass.html">Ver Saldo</a></li>
 			        <li><a href="badges.html">Components</a></li>
 			        <li><a href="collapsible.html">Javascript</a></li>
-			        <li><a href="index.html">Mobile</a></li>
+			        <li><a href="home.html">Mobile</a></li>
 	      		</ul>
 	     		<ul class="side-nav" id="mobile-demo">
 			        <li><a href="sass.html"><i class="fa fa-usd" aria-hidden="true"></i> Ver Saldo</a></li>
 			        <li><a href="badges.html"><i class="fa fa-calculator" aria-hidden="true"></i> Calcular Tarifa</a></li>
 			        <li><a href="collapsible.html"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a></li>
 			        <li><a href="mobile.html"><i class="fa fa-file-text" aria-hidden="true"></i> Preguntas Frecuentes</a></li>
-			        <li><a href="index.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></li>
+			        <li><a href="home.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></li>
 	      		</ul>
 	    	</div>
 	 	</nav>
@@ -47,7 +47,31 @@
 	</section>
 	<!--SECTION-->	
 	<section class="img-perfil">
-		
+		<div class="row">
+			<div class="col s10 offset-s1 caja-correo center">
+				<div id="respuesta-correo"></div>
+			</div>
+		</div>
+	</section>	
+	<!--SECTION-->	
+	<section class="input-tarjeta">
+		<div class="row">
+			<div class="input-field col s10 offset-s1">
+				<input placeholder="Numero de Tarjeta" id="tarjeta" type="text" class="validate">
+				<label for="tarjeta" data-error="wrong">Número tarjeta</label>
+			</div>
+			<div class="col s10 offset-s1">
+				<a class="waves-effect waves-light btn" id="btn-tarjeta">AGREGAR TARJETA</a>
+			</div>			
+		</div>
+	</section>	
+	<!--SECTION LISTA TARJETAS-->	
+	<section class="lista-tarjetas">
+		<div class="row">
+			<div class="col s10 offset-s1">
+				<div id="tarjetas-creadas"></div>
+			</div>
+		</div>
 	</section>	
 
 
@@ -56,6 +80,6 @@
 	<!--materialize-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>	
 	<!--js-->
-    <script src="js/perfil.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
