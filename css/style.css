@@ -1,1 +1,20 @@
-/* YeyeYeee código aquí */
+body{
+	background-color: #303032;
+}
+
+.img-principal{
+	padding-top: 100px;
+	width: 150px;
+}
+
+.t-logo{
+	font-weight: 600;
+	font-size: 40px;
+	color: #F29809;
+	margin: 0;
+}
+
+.btn{
+	width: 100%;
+	background-color: #F29809;
+}
