@@ -2,6 +2,8 @@ body{
 	background-color: #303032;
 }
 
+/*------ LOGO ------*/ 
+
 .img-principal{
 	padding-top: 100px;
 	width: 150px;
@@ -14,7 +16,25 @@ body{
 	margin: 0;
 }
 
+/*------ DATOS ------*/ 
+.los-input{
+	margin-top: 0;
+}
+
+#mail,
+#contrasena{
+	background-color: #FFF;
+	margin:0;
+	padding: 4px 0;
+}
+
 .btn{
 	width: 100%;
 	background-color: #F29809;
 }
+
+.olvido p{
+	margin: 0;
+}
+
+/*------ REGISTRO ------*/ 
