@@ -8,7 +8,6 @@ $(document).ready(function(){
   /* SELECT */
   $('select').material_select();
 
-
 /*-------- VALIDACIÓN INICIAL --------*/
 
 	$("#sesion").click(function(event){
@@ -40,7 +39,6 @@ $(document).ready(function(){
   `)
   var arr = [];
 
-
   /* Capturar valor tarjetas */
   $("#btn-tarjeta").click(function() {
     if(!(/^\d{8}([0-9])*$/.test($("#tarjeta").val())) ){
@@ -55,19 +53,15 @@ $(document).ready(function(){
         <div class="caja">
           <h6>`+valorIngresado+`</h6>
         </div>
-      `)
+      `);
       
       localStorage.setItem('todas-tarjetas',arr);
-
       console.log(localStorage.getItem('todas-tarjetas'));
-
-      console.log(localStorage.getItem('todas-tarjetas', JSON.stringify(arr)));
-      
+      console.log(localStorage.getItem('todas-tarjetas', JSON.stringify(arr)));      
       $("#tarjeta").val("");       
     }
 
   });
-
 
 /*-------- LLENAR SELECT --------*/
 
@@ -85,6 +79,8 @@ $(document).ready(function(){
   });
 
 /*-------- SALDO --------*/
+
+/* BLOQUEO SEGUN CLICK
   $("#tarjeta-saldo").focus(function(){
     $("#el-select").attr('disabled', '');
   })
@@ -93,7 +89,7 @@ $(document).ready(function(){
     $("#tarjeta-saldo").attr('disabled', '');
     $("#tarjeta-saldo").val("");
   })
-
+*/
 
   $('#btn-ver-saldo').click(function(){
     $("#saldo").empty();
@@ -142,11 +138,12 @@ $(document).ready(function(){
           </div>
         </div> 
       `);
-    })  
+    });  
   }  
 
 /*-------- TARIFA --------*/
 
+/* BLOQUEO SEGUN CLICK
   $("#tarjeta-numero").click(function(){
     $("#select-tarjeta").attr('disabled', '');
     $("#select-vacio-tarifa").removeClass(".remove");
@@ -164,10 +161,7 @@ $(document).ready(function(){
   $("#div-vacio-tarjeta").click(function(){
       $("#tarjeta-numero").removeAttr('disabled', true);
   });
-
-
-
-
+*/
 
   $('#btn-calcular').click(function(){
     $("#lo-calculado").empty();
@@ -180,7 +174,6 @@ $(document).ready(function(){
     }
   });
 
-
   $('#btn-calcular').click(function(){
     $("#lo-calculado").empty();
     if($("#select-tarjeta").val() == ""){
@@ -190,8 +183,6 @@ $(document).ready(function(){
       callbacksAjaxBipTarifaSelect($("#select-tarjeta").val());
     }
   });
-
-
 
   var callbacksAjaxBipTarifa = function(num){
     $.ajax({
@@ -410,5 +401,4 @@ $(document).ready(function(){
       }                
     });
   } 
-
 });
