@@ -32,6 +32,23 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
 	margin-top: 30px;
 }
 
+
+#div-vacio-tarjeta,
+#select-vacio-tarifa{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top:0;
+}
+
+.remove{
+	display: none;
+}
+
+
+
+
 .caja-tarifa,
 .caja-valor-horario{
 	margin-top: 20px;
