@@ -15,6 +15,13 @@ nav{
 	background-color: #F29809;
 }
 
+.btn:hover{
+	background-color: #CC7400;
+}
+
+.btn:focus{
+    background-color: #F29809;
+}
 
 .side-nav li>a>i{
 	color: #F29809;

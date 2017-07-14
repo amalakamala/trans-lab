@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Perfil | TRANS-LAB</title>
+	<title>Saldo | TRANS-LAB</title>
     <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">	
     <!--favicon-->
@@ -14,7 +14,7 @@
 	<!--Materialize-->
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <!--CSS-->
-    <link href="css/style-perfil.css" rel="stylesheet">		
+    <link href="css/style-saldo.css" rel="stylesheet">		
 </head>
 <body>
 	<!--HEADER-->
@@ -40,43 +40,30 @@
 	    	</div>
 	 	</nav>
 	</header>
-	<!--SECTION-->	
-	<section class="img-perfil">
-		<div class="fondo">
-			<img src="img/profile.jpg" alt="">
-		</div>
-	</section>
-	<!--SECTION-->	
-	<section class="img-perfil">
-		<div class="row">
-			<div class="col s10 offset-s1 caja-correo center">
-				<div id="respuesta-correo"></div>
-			</div>
-		</div>
-	</section>	
-	<!--SECTION-->	
-	<section class="input-tarjeta">
+	<!--SECTION NUM TARJETA-->	
+	<section class="section-num-tarjetas">
 		<div class="row">
 			<div class="input-field inline col s10 offset-s1">
-				<input id="tarjeta" type="text" class="tarjeta-input">
-				<label for="tarjeta" data-error="wrong">Número tarjeta</label>
+				<input id="tarjeta-saldo" type="text" class="tarjeta-saldo-input">
+				<label for="tarjeta-saldo" data-error="wrong">Número tarjeta</label>
 			</div>
-			<div class="col s10 offset-s1">
-				<a class="waves-effect waves-light btn" id="btn-tarjeta">AGREGAR TARJETA</a>
-			</div>			
+		</div>	
+		<div class="row">	
+			<div class="input-field col s10 offset-s1">
+				<select class="browser-default">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
 		</div>
-	</section>	
-	<!--SECTION LISTA TARJETAS-->	
-	<section class="lista-tarjetas">
 		<div class="row">
-			<div class="col s10 offset-s1">
-				<div id="tarjetas-creadas" class="center">
-					
-				</div>
+			<div class="col s10 offset-s1 center">
+				<a class="waves-effect waves-light btn" id="btn-ver-saldo">VER SALDO</a>
 			</div>
 		</div>
-	</section>	
-
+	</section>
 
 	<!--jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
