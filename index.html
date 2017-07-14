@@ -31,8 +31,22 @@
 		<div class="row">
 			<div class="input-field col s10 offset-s1">
 				<div class="blanco">
-					<input placeholder="Correo electrónico" id="mail" type="text" class="validate">
-					<input placeholder="Contraseña" id="contrasena" type="text" class="validate">
+					<div class="row caja-blanco">
+						<div class="col s12">
+							<div class="row">
+								<div class="input-field col s12">
+	          						<i class="material-icons prefix">account_circle</i>
+	          						<input id="mail" type="text" class="validate">
+	          						<label for="mail">Correo electrónico</label>
+	         					</div>
+								<div class="input-field col s12">
+	          						<i class="material-icons prefix">lock_outline</i>
+	          						<input id="contrasena" type="text" class="validate" data-length="8">
+	          						<label for="mail">Contraseña</label>
+	         					</div>   
+         					</div>       					
+						</div>
+					</div>	
 				</div>
 				<div>
 					<a class="waves-effect waves-light btn" id="sesion">INICIAR SESIÓN</a>
@@ -47,7 +61,7 @@
 	<section class="registro">
 		<div class="row">
 			<div class="col s12 center">
-				<h6>¿NO TIENES CUENTA?<span>REGÍSTRATE</span></h6>
+				<h6>¿NO TIENES CUENTA?<span> REGÍSTRATE</span></h6>
 			</div>
 		</div>	
 	</section>

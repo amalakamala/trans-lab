@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  /* max num */
+  $('input#input_text, textarea#textarea1').characterCounter();
   /* NAV */
   $(".button-collapse").sideNav();
   /* COLLAPSIBLE */

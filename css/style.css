@@ -21,25 +21,46 @@ body{
 	margin-top: 0;
 }
 
+.blanco{
+	background-color: #FFF;
+	margin: 0;
+}
+
+.caja-blanco{
+	margin: 0;
+}
+
+.input-field .prefix.active{
+	color: #F29809;
+}
+
 #mail,
 #contrasena{
 	background-color: #FFF;
-	margin:0;
 	padding: 4px 0;
+	margin-bottom: 0;
 }
 
-.btn{
+.btn, .btn:focus{
 	width: 100%;
 	background-color: #F29809;
 }
 
-.olvido p{
-	margin: 0;
+.btn:hover{
+    background-color: #CC7400;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]){
+.olvido p{
+	margin-top: 10px;
+	color: #FFF;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=text]:not(.browser-default).valid{
 	border-bottom: 1px solid #F29809;
-    box-shadow: 0 1px 0 0 #F29809;
+    box-shadow: none;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly])+label{
@@ -48,3 +69,12 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
 
 
 /*------ REGISTRO ------*/ 
+.registro h6{
+	color: #FFF;
+	font-weight: 300;	
+}
+
+.registro h6 span{
+	color: #F29809;
+	font-weight: 500;		
+}

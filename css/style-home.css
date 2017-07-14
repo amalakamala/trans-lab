@@ -6,6 +6,10 @@ nav{
 	background-color: #303032;
 }
 
+.side-nav li>a>i{
+	color: #F29809;
+}
+
 .botones{
 	margin-top: 150px;
 }

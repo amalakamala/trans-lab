@@ -14,7 +14,8 @@ nav{
 	padding: 50px 0;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]){
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=text]:not(.browser-default).valid{
 	border-bottom: 1px solid #F29809;
     box-shadow: none;
 }
@@ -23,10 +24,6 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
 	color: #F29809;
 }
 
-input[type=text]:not(.browser-default).valid{
-	border-bottom: 1px solid #F29809;
-    box-shadow: none;
-}
 
 .btn, .btn:hover{
 	background-color: #F29809;
