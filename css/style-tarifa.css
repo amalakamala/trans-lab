@@ -29,5 +29,27 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
 }
 
 .section-el-saldo{
-	margin-top: 100px;
+	margin-top: 30px;
+}
+
+.caja-tarifa,
+.caja-valor-horario{
+	margin-top: 20px;
+	width: 100%;
+	background-color: #F29809;
+}
+
+.total-text{
+	background-color: #303032;
+}
+
+.total-text h6{
+	color: #FFF;
+	padding: 10px;
+}
+
+.caja-tarifa h4,
+.caja-valor-horario h4{
+	padding-top: 10px;
+	padding-bottom: 15px;	
 }
