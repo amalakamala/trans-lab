@@ -14,7 +14,7 @@
 	<!--Materialize-->
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <!--CSS-->
-    <link href="css/style-perfil.css" rel="stylesheet">		
+    <link href="css/style-tarifa.css" rel="stylesheet">		
 </head>
 <body>
 	<!--HEADER-->
@@ -41,6 +41,31 @@
 	 	</nav>
 	</header>
 
+	<section class="section-el-saldo">
+		<div class="row">
+			<div class="input-field inline col s10 offset-s1">
+				<input id="tarjeta-numero" type="text" class="tarjeta-num-input" data-length="8">
+				<label for="tarjeta-numero" data-error="wrong">Número tarjeta</label>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="input-field inline col s5 offset-s1">
+				<select  id="select-tarifa" class="browser-default">
+					<option value="" disabled selected>Elige tu tarifa</option>
+				</select>
+			</div>
+			<div class="input-field inline col s5">
+				<select  id="select-tarjeta" class="browser-default">
+					<option value="" disabled selected>Elige tu tarjeta</option>
+				</select>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col s10 offset-s1 center">
+				<a class="waves-effect waves-light btn" id="btn-calcular">CALCULAR</a>
+			</div>
+		</div>		
+	</section>
 	<!--jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--materialize-->
