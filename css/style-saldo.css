@@ -32,3 +32,23 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
 .btn:focus{
     background-color: #CC7400;
 }
+
+
+.caja-saldo{
+	width: 100%;
+	background-color: #F29809;
+}
+
+.total-text{
+	background-color: #303032;
+}
+
+.total-text h6{
+	color: #FFF;
+	padding: 10px;
+}
+
+.saldo-text h4{
+	padding-top: 10px;
+	padding-bottom: 15px;	
+}

@@ -35,6 +35,10 @@ nav{
 	font-weight: 600;
 }
 
+.btn-agregar{
+	margin-top: 20px;
+}
+
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=text]:not(.browser-default).valid{
 	border-bottom: 1px solid #F29809;
